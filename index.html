@@ -87,5 +87,14 @@ But here are also some technologies which I like to use while developing softwar
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
+    <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+    
+    
   </body>
 </html>
